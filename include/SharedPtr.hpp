@@ -22,8 +22,8 @@ class SharedPtr {
     if (newPointer==nullptr){
       counter=nullptr;
     }
-    else {
-      counter = new std::atomic_uint;
+    else{
+      counter=new std::atomic_uint;
       *counter=1;
     }
   };
