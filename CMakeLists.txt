@@ -32,7 +32,7 @@ add_library(${PROJECT_NAME} INTERFACE
         )
 
 add_executable(demo
-        ${CMAKE_CURRENT_SOURCE_DIR}/include/SharedPtr.hpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/demo/main.cpp
         )
 
 target_include_directories(${PROJECT_NAME} INTERFACE
