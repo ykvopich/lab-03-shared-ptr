@@ -73,7 +73,7 @@ endif()
 
 include(CPackConfig.cmake)
 
-install(TARGETS ${PROJECT_NAME} demo
+install(TARGETS ${PROJECT_NAME}
         EXPORT "${PROJECT_NAME}-targets"
         RUNTIME DESTINATION bin
         ARCHIVE DESTINATION lib
