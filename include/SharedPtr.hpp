@@ -17,7 +17,7 @@ class SharedPtr {
  public:
   SharedPtr(): pointer(nullptr), counter(nullptr){}
 
-  explicit SharedPtr(T* newPointer) {
+  explicit SharedPtr(T* newPointer){
     pointer=newPointer;
     if (newPointer==nullptr){
       counter=nullptr;
@@ -42,7 +42,7 @@ class SharedPtr {
   };
 
   SharedPtr& operator=(const SharedPtr& sharedPtr){
-    if (this != &sharedPtr) {
+    if (this != &sharedPtr){
       pointer = sharedPtr.pointer;
       counter = sharedPtr.counter;
       if (pointer){
