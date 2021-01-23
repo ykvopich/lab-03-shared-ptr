@@ -3,7 +3,6 @@
 #ifndef INCLUDE_HEADER_HPP_
 #define INCLUDE_HEADER_HPP_
 
-#endif // INCLUDE_HEADER_HPP_
 
 #include <iostream>
 #include <atomic>
@@ -146,8 +145,8 @@ class SharedPtr {
     }
   }
 
-
  private:
   T* pointer;
   atomic_uint* counter;
 };
+#endif // INCLUDE_HEADER_HPP_
