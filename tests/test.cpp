@@ -9,7 +9,7 @@ class TestClass {
   int a;
 };
 
-TEST(testConstructor, pointNullptr) {
+TEST(testConstructor, pointNullptr){
   SharedPtr <int> pointer;
   int* tmp = pointer.get();
   EXPECT_EQ(tmp, nullptr);
