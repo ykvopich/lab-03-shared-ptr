@@ -23,7 +23,7 @@ class SharedPtr {
       counter=nullptr;
     }
     else {
-      counter = new std::atomic_uint ;
+      counter = new std::atomic_uint;
       *counter=1;
     }
   };

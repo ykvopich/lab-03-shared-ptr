@@ -16,7 +16,7 @@ EXPECT_EQ(tmp, nullptr);
 }
 
 TEST(testConstructor, TestMove){
-  int* anyPointer = new int (25);
+  int* anyPointer = new int(25);
   SharedPtr <int> pointer(anyPointer);
   SharedPtr <int> sPointer(move(pointer));
   SharedPtr <int> thPointer;
@@ -25,6 +25,7 @@ TEST(testConstructor, TestMove){
   foPointer = thPointer;
   EXPECT_EQ(25, *sPointer.get());
   EXPECT_FALSE(pointer);
+  delete anyPointer;
 }
 
 TEST(testOperator, arrowTest) {
